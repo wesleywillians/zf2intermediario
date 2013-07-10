@@ -1,0 +1,4 @@
+.elasticbeanstalk/
+.idea/
+vendor/
+data/

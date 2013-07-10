@@ -1,0 +1,14 @@
+<h3>Editar Privilege</h3>
+
+<br />
+
+<?php
+$form = $this->form; 
+
+$form->setAttribute('action', $this->url('sonacl-admin/default',array('controller'=>'privileges','action'=>'edit')));
+
+$form->prepare();
+echo $this->form()->openTag($form);
+echo $this->formCollection($form);
+echo $this->form()->closeTag();
+?>

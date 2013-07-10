@@ -1,0 +1,22 @@
+<h3>Register</h3>
+
+<?php if($this->messages):?>
+<p>
+    <?php echo $this->messages[0]; ?>
+</p>
+
+<?php else: ?>
+
+<?php
+$form = $this->form;
+$form->setAttribute('action',$this->url('sonuser-register',array('controller'=>'index','action'=>'register')));
+$form->prepare();
+
+echo $this->form()->openTag($form);
+echo $this->formCollection($form);
+echo $this->form()->closeTag();
+
+?>
+
+
+<?php endif; ?>

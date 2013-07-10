@@ -1,0 +1,14 @@
+<h3>Novo privilege</h3>
+
+<br />
+
+<?php
+$form = $this->form; 
+
+$form->setAttribute('action', $this->url('sonacl-admin/default',array('controller'=>'roles','action'=>'new')));
+
+$form->prepare();
+echo $this->form()->openTag($form);
+echo $this->formCollection($form);
+echo $this->form()->closeTag();
+?>
